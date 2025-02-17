@@ -5,10 +5,10 @@
         <link>https://deepdomainproblems.com</link>
         <description>This is my portfolio RSS feed</description>
         <item>
-          <title>Embracing Vim: The Unsung Hero of Code Editors</title>
-          <link>https://deepdomainproblems.com/blog/vim</link>
-          <description>Discover why Vim, with its steep learning curve, remains a beloved tool among developers for editing code efficiently and effectively.</description>
-          <pubDate>Tue, 09 Apr 2024 00:00:00 GMT</pubDate>
+          <title>Embracing DDP: Deep Domain Problems</title>
+          <link>https://deepdomainproblems.com/blog/ddp</link>
+          <description>Discover DDP - a recognition and collaboration to solve deep domain problems.</description>
+          <pubDate>Mon, 17 Feb 2025 00:00:00 GMT</pubDate>
         </item>
 <item>
           <title>Spaces vs. Tabs: The Indentation Debate Continues</title>
