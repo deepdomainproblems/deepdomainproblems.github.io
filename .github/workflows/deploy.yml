@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: pnpm i && pnpm run build
+      - run: npm i pnpm --global && pnpm i && pnpm run build
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: ./out/
