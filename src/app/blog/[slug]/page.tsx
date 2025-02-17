@@ -72,6 +72,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
       images: [ogImage],
     },
+    other: {
+      image: ogImage,
+    },
   };
 }
 
