@@ -2,28 +2,55 @@ import { notFound } from "next/navigation";
 import { CustomMDX } from "@/components/mdx";
 import { formatDate, getBlogPosts } from "@/app/blog/utils";
 import { baseUrl } from "@/sitemap";
+import type { Metadata } from "next";
+
+type Props = {
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+};
 
 export async function generateStaticParams() {
-  let posts = getBlogPosts();
+  const posts = getBlogPosts();
 
   return posts.map((post) => ({
     slug: post.slug,
   }));
 }
 
-export function generateMetadata({ params }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug);
+// https://nextjs.org/docs/app/api-reference/functions/generate-metadata#generatemetadata-function
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const slug = (await params).slug;
+
+  const post = getBlogPosts().find((post) => post.slug === slug);
+
   if (!post) {
-    return;
+    return {
+      title: "Post not found",
+      description: "The post you are looking for does not exist.",
+      openGraph: {
+        title: "Post not found",
+        description: "The post you are looking for does not exist.",
+        type: "article",
+        url: `${baseUrl}/not-found`,
+        images: [],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "Post not found",
+        description: "The post you are looking for does not exist.",
+        images: [],
+      },
+    };
   }
 
-  let {
+  const {
     title,
     publishedAt: publishedTime,
     summary: description,
     image,
   } = post.metadata;
-  let ogImage = image
+  const ogImage = image
     ? image
     : `${baseUrl}/og?title=${encodeURIComponent(title)}`;
 
@@ -51,8 +78,13 @@ export function generateMetadata({ params }) {
   };
 }
 
-export default function Blog({ params }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug);
+export default async function Blog({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const slug = (await params).slug;
+  const post = getBlogPosts().find((post) => post.slug === slug);
 
   if (!post) {
     notFound();

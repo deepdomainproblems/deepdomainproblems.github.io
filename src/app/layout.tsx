@@ -45,7 +45,11 @@ export const metadata: Metadata = {
   },
 };
 
-const cx = (...classes) => classes.filter(Boolean).join(" ");
+interface ClassNames {
+  (...classes: (string | boolean | undefined)[]): string;
+}
+
+const cx: ClassNames = (...classes) => classes.filter(Boolean).join(" ");
 
 export default function RootLayout({
   children,
