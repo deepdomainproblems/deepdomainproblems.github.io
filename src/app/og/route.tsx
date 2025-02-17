@@ -5,7 +5,7 @@ export const dynamic = "force-static";
 export function GET() {
   // const url = new URL(request.url);
   // const title = url.searchParams.get("title") || "Next.js Portfolio Starter";
-  const title = "Next.js Portfolio Starter";
+  const title = "Deep Domain Problems (DDP)";
 
   return new ImageResponse(
     (
