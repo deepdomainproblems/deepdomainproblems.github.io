@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { CustomMDX } from "@/components/mdx";
 import { formatDate, getBlogPosts } from "@/app/blog/utils";
-import { baseUrl } from "@/sitemap";
+import { baseUrl } from "@/app/sitemap";
 import type { Metadata } from "next";
 
 type Props = {
