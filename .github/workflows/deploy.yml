@@ -1,0 +1,18 @@
+# .github/workflows/deploy.yml
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy-main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: pnpm i && pnpm run build
+      - uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ./out/
+          branch: gh-pages
+          clean-exclude: pr-preview
+          force: false
