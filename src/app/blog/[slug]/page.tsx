@@ -48,11 +48,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     publishedAt: publishedTime,
     summary: description,
-    image,
   } = post.metadata;
-  const ogImage = image
-    ? image
-    : `${baseUrl}/og?title=${encodeURIComponent(title)}`;
+  const ogImage = `${baseUrl}/og.png`;
 
   return {
     title,
