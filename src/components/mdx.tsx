@@ -98,7 +98,7 @@ function createHeading(level: 1 | 2 | 3 | 4 | 5 | 6) {
   return Heading;
 }
 
-const components = {
+export const components = {
   h1: createHeading(1),
   h2: createHeading(2),
   h3: createHeading(3),
