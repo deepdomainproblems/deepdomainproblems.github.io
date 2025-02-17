@@ -20,17 +20,24 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Next.js Portfolio Starter",
-    template: "%s | Next.js Portfolio Starter",
+    default: "Deep Domain Problems",
+    template: "%s | DDP",
   },
-  description: "This is my portfolio.",
+  description: "Let's solve deep domain problems",
   openGraph: {
-    title: "My Portfolio",
-    description: "This is my portfolio.",
+    title: "DDP",
+    description: "Deep Domain Problems",
     url: baseUrl,
-    siteName: "My Portfolio",
+    siteName: "DDP",
     locale: "en_US",
     type: "website",
+  },
+  other: {
+    image: `${baseUrl}/og.png`,
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [`${baseUrl}/og.png`],
   },
   robots: {
     index: true,
