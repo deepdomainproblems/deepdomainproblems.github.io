@@ -7,11 +7,7 @@ export default function Page() {
         Deep Domain Problems (DDPs)
       </h1>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        {`Deep Domain Problems represent the complex challenges that power critical industry systems, requiring both extensive domain expertise and technical prowess to solve. These problems thrive on deep understanding of industry intricacies, regulations, and decades of accumulated knowledge. I advocate for meaningful collaboration between seasoned domain experts and dedicated technologists, believing that transformation comes from bridging traditional wisdom with modern technical capabilities.`}
       </p>
       <div className="my-8">
         <BlogPosts />
