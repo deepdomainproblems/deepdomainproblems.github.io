@@ -11,15 +11,15 @@
           <pubDate>Wed, 19 Feb 2025 00:00:00 GMT</pubDate>
         </item>
 <item>
-          <title>Embracing DDP: Deep Domain Problems</title>
-          <link>https://deepdomainproblems.com/blog/ddp</link>
-          <description>Discover DDP - a recognition and collaboration to solve deep domain problems.</description>
-          <pubDate>Mon, 17 Feb 2025 00:00:00 GMT</pubDate>
-        </item>
-<item>
           <title>The Evolving Role of Programmers in Solving Deep Domain Problems</title>
           <link>https://deepdomainproblems.com/blog/usingAIForDDP</link>
           <description>AI augments development workflows by automating repetitive tasks, enabling programmers to become domain-specific solution architects who translate complex business requirements into computational frameworks—a transition that reshapes traditional programming roles.</description>
+          <pubDate>Wed, 19 Feb 2025 00:00:00 GMT</pubDate>
+        </item>
+<item>
+          <title>Embracing DDP: Deep Domain Problems</title>
+          <link>https://deepdomainproblems.com/blog/ddp</link>
+          <description>Discover DDP - a recognition and collaboration to solve deep domain problems.</description>
           <pubDate>Mon, 17 Feb 2025 00:00:00 GMT</pubDate>
         </item>
     </channel>
