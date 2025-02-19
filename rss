@@ -5,9 +5,21 @@
         <link>https://deepdomainproblems.com</link>
         <description>This is my portfolio RSS feed</description>
         <item>
+          <title>Coding with AI and Sunk Cost Fallacy</title>
+          <link>https://deepdomainproblems.com/blog/sunkCostFallacy</link>
+          <description></description>
+          <pubDate>Wed, 19 Feb 2025 00:00:00 GMT</pubDate>
+        </item>
+<item>
           <title>Embracing DDP: Deep Domain Problems</title>
           <link>https://deepdomainproblems.com/blog/ddp</link>
           <description>Discover DDP - a recognition and collaboration to solve deep domain problems.</description>
+          <pubDate>Mon, 17 Feb 2025 00:00:00 GMT</pubDate>
+        </item>
+<item>
+          <title>The Evolving Role of Programmers in Solving Deep Domain Problems</title>
+          <link>https://deepdomainproblems.com/blog/usingAIForDDP</link>
+          <description></description>
           <pubDate>Mon, 17 Feb 2025 00:00:00 GMT</pubDate>
         </item>
     </channel>
