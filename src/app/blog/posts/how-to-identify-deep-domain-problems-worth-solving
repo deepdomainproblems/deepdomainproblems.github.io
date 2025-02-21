@@ -1,0 +1,174 @@
+---
+title: "How to Identify Deep Domain Problems Worth Solving"
+publishedAt: "2025-02-21"
+summary: "A methodical approach to identifying Deep Domain Problems (DDPs) by recognizing persistent manual processes, tacit knowledge indicators, cross-system complexity, and resistance to previous automation attempts."
+---
+
+After a decade of digital transformation projects, I've observed a pattern: the most valuable opportunities aren't creating more apps or dashboards but solving what I call "Deep Domain Problems" (DDPs) – complex challenges requiring domain expertise and technical innovation.
+
+## What Makes a Problem "Deep"?
+
+Deep Domain Problems have distinct characteristics:
+
+### 1. They Require Specialized Domain Knowledge
+
+A true DDP can't be solved by technical expertise alone. It requires understanding:
+
+- Industry-specific processes developed over decades
+- Regulatory frameworks governing the domain
+- Undocumented operational wisdom
+- Complex stakeholder relationships
+
+Example: Insurance underwriters assess commercial policy applications by evaluating hundreds of risk factors, applying regulatory requirements across jurisdictions, and using domain knowledge that combines actuarial science with business judgment.
+
+### 2. They Involve Tacit Knowledge
+
+When domain experts say, "It depends" or "I know from experience," they indicate tacit knowledge—expertise not documented in manuals. DDPs often depend on this implicit understanding.
+
+Look for:
+
+- Experts who can't easily articulate their decision process
+- Roles requiring years to master, not months
+- Documentation covering basics but not exceptions
+- Identical inputs producing different outcomes based on context
+
+### 3. They Span Multiple Systems or Stakeholders
+
+DDPs typically cross boundaries:
+
+- They involve legacy systems not designed to interoperate
+- They require coordination between stakeholders with competing priorities
+- They bridge organizational silos
+- They balance opposing concerns (efficiency vs. compliance)
+
+The supply chain challenges of 2020-2023 highlighted DDPs in resilience and visibility. Companies found their systems couldn't track inventory across supplier tiers or anticipate logistics bottlenecks – problems crossing organizational boundaries requiring domain expertise.
+
+### 4. They Resist Simple Automation
+
+Previous DDP solution attempts often produce:
+
+- Partial solutions handling only routine cases
+- Complex workarounds creating new problems
+- High exception rates requiring manual intervention
+- Technically functional systems rejected by users
+
+## How to Spot High-Value DDPs
+
+Here are practical approaches to identifying a DDP worth solving:
+
+### 1. Find Persistent Manual Processes
+
+Identify areas where skilled professionals still perform tasks manually despite automation attempts. This indicates a DDP that previous solutions failed to understand.
+
+**Examples:**
+- Underwriters manually reviewing "borderline" applications
+- Supply chain managers overriding automated ordering systems
+- Compliance officers adding extra checks beyond regulatory systems
+
+### 2. Listen for Specific Language
+
+Note when domain experts use phrases like:
+
+- "The system doesn't understand that we need to..."
+- "There's an art to figuring out when to..."
+- "You develop a feel for which cases need attention."
+- "The rules change depending on context"
+
+This language reveals gaps between documented processes and actual practice.
+
+### 3. Identify "Translation" Roles
+
+Find roles where people translate between systems, departments, or knowledge domains. These roles often develop around DDPs.
+
+**Examples:**
+- Finance managers reconciling data between ERP and billing systems
+- Product specialists translating between engineering and sales teams
+- Administrators who know all the exceptions to standard procedures
+
+### 4. Trace Exception Paths
+
+Follow what happens when standard processes break down:
+
+1. Start with a standard process
+2. Identify when and why exceptions occur
+3. Track who handles these exceptions
+4. Document what specialized knowledge they apply
+5. Look for patterns in exceptions
+
+### 5. Analyze High-Value Decision Points
+
+Identify where expert judgment significantly impacts outcomes:
+
+- Diagnostic decisions in healthcare
+- Risk assessment in financial services
+- Resource allocation during critical operations
+- Strategic planning in complex organizations
+
+## Evaluating DDP Opportunities
+
+Assess potential DDPs against these criteria:
+
+### 1. Impact Potential
+
+- How many organizations face this problem?
+- What's the cost of the current approach?
+- Would a solution create incremental or transformative change?
+
+### 2. Readiness for Solution
+
+- Is domain knowledge accessible?
+- Are domain experts willing to collaborate?
+- Has technology advanced enough to tackle this problem?
+
+### 3. Market Dynamics
+
+- Is the problem persistent or emerging?
+- Are organizations seeking solutions?
+- Is regulatory or competitive pressure creating urgency?
+
+### 4. Domain Complexity vs. Technical Complexity
+
+- Is the challenge primarily in understanding the domain or in technical limitations?
+- Can domain knowledge be effectively modeled with current technologies?
+- Is partial automation valuable, or is an all-or-nothing solution required?
+
+## Real-World Example: Healthcare Prior Authorization
+
+Consider determining whether a medical procedure requires prior authorization from an insurer. This contains multiple DDP characteristics:
+
+1. **Domain Knowledge Requirements**:
+   - Insurance plan specifics
+   - Patient's clinical history
+   - Provider credentials and facility type
+   - Evolving medical evidence
+   - State and federal regulations
+
+2. **Tacit Knowledge**:
+   - Which procedures typically need authorization
+   - What documentation satisfies reviewers
+   - How to navigate insurer requirements
+   - When to escalate borderline cases
+
+3. **Cross-System Complexity**:
+   - Electronic health records
+   - Practice management software
+   - Insurer portals (with different interfaces)
+   - Clinical documentation systems
+
+4. **Resistance to Automation**:
+   - Hospitals maintain large authorization departments despite automation attempts
+   - Existing solutions can't handle the full complexity
+
+This represents a valuable DDP opportunity because:
+- It creates significant costs throughout healthcare
+- It delays patient care
+- The domain knowledge, while complex, is accessible
+- Partial solutions create significant value
+
+## Conclusion
+
+Identifying DDPs requires looking beyond surface inefficiencies to where complex domain knowledge meets technical challenges. By recognizing DDP characteristics and systematically evaluating opportunities, organizations can focus on problems that create substantial value when solved.
+
+The most promising DDPs often hide within processes accepted as "just how things work" in an industry. By identifying these opportunities, you can find problems that, when solved, deliver transformative improvements.
+
+As AI advances, distinguishing between surface-level problems and DDPs becomes crucial. While generative AI can solve straightforward challenges, Deep Domain Problems require collaboration between domain experts and technologists. Focusing on these problems creates opportunities for innovation that transforms industries rather than merely digitizing existing processes.
