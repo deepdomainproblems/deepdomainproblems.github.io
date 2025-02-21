@@ -1,189 +1,166 @@
 ---
 title: "How to Break Down a Deep Domain Problem"
 publishedAt: "2025-02-21"
-summary: "A systematic framework for decomposing Deep Domain Problems through knowledge mapping, structural analysis, functional capabilities, and assumption testing to create manageable solution components."
+summary: "A systematic framework to decompose Deep Domain Problems using knowledge mapping, structural analysis, functional capabilities, and validation to build actionable solutions."
 ---
 
-Once you've identified a Deep Domain Problem (DDP) worth solving, the next challenge is breaking it down into manageable components. This systematic decomposition is critical—without it, you risk creating solutions that address only surface symptoms or collapse under the domain's complexity.
+Identifying a Deep Domain Problem (DDP) worth solving is just the start. The real challenge? Breaking it into pieces you can actually tackle. Without a clear breakdown, you’ll either skim the surface or drown in complexity. Here’s a systematic approach to decomposing DDPs into manageable, solvable components.
 
 ## Knowledge Extraction and Mapping
 
-### 1. Document the Domain Vocabulary
+### 1. Build a Domain Glossary  
+Anchor your work with a shared vocabulary:  
+- Capture how experts define key terms (e.g., "risk" in finance vs. manufacturing).  
+- Note stakeholder-specific variations—same word, different meanings.  
+- Flag subtle distinctions (e.g., "policy" vs. "guideline").  
+- Track context-shifting definitions.  
 
-Start by creating a glossary of domain-specific terms:
+This glossary aligns your team and grounds all analysis.
 
-- Document how domain experts define key concepts
-- Note variations in terminology across different stakeholders
-- Identify terms that seem similar but have important distinctions
-- Record context-dependent meanings of the same terms
+### 2. Chart Expert Decision-Making  
+Unpack how pros navigate the domain:  
+- Interview varied experts on key workflows—record steps and gut calls.  
+- Pinpoint inputs they weigh (e.g., data, past cases).  
+- Highlight forks like "it depends"—these signal critical logic splits.  
+- Compare approaches across experts to spot patterns or gaps.  
 
-This vocabulary becomes the foundation for all subsequent analysis and ensures everyone involved in the solution shares a common language.
+These maps expose the tacit smarts driving the domain.
 
-### 2. Map Expert Decision Processes
+### 3. Pinpoint Knowledge Sources  
+Locate where truth lives:  
+- Formal: Regs, manuals, SOPs.  
+- Informal: Expert know-how, unwritten rules.  
+- Systems: Databases, legacy tools, external APIs.  
+- Tribal: Shop-floor wisdom or team lore.  
 
-For each key workflow or decision point:
-
-- Interview multiple domain experts about their approach
-- Document both their conscious process and intuitive judgments
-- Record the information they consider relevant at each step
-- Note where different experts take different approaches
-
-Pay special attention to phrases like "it depends" or "except when"—these indicate important conditional branches in the domain logic.
-
-### 3. Identify Sources of Truth
-
-Document where domain knowledge currently resides:
-
-- Formal sources: Regulations, policies, reference manuals
-- Informal sources: Expert knowledge, historical precedents, rules of thumb
-- External systems: Databases, legacy applications, third-party services
-- Tribal knowledge: Undocumented practices shared among experienced practitioners
-
-Understanding these sources helps prioritize which aspects of the domain to formalize first.
+Prioritize what to formalize first—start with what’s reliable and accessible.
 
 ## Structural Decomposition
 
-### 1. Separate Core Domain from Supporting Elements
+### 1. Split Core from Support  
+Layer the problem by value:  
+- **Core Domain**: What’s unique and high-stakes (e.g., risk scoring in compliance).  
+- **Supporting Domains**: Essential but commodity (e.g., data entry).  
+- **Generic Elements**: Off-the-shelf stuff (e.g., login systems).  
 
-Break the problem into layers of importance:
+Focus innovation on the core; leverage existing tools elsewhere.
 
-- **Core domain**: The essential elements that create unique value and competitive advantage
-- **Supporting domains**: Important but not differentiating components
-- **Generic elements**: Standard functionality that exists in many systems
+### 2. Define Bounded Contexts  
+Big domains fragment into sub-worlds:  
+- Map where concepts shift (e.g., "order" in sales vs. shipping).  
+- Trace data handoffs between contexts.  
+- Specify translation rules at boundaries.  
+- Flag which contexts sync vs. run solo.  
 
-This separation helps focus innovation resources on the most valuable aspects of the problem while using existing solutions for generic components.
+This keeps your solution modular, not a bloated monolith.
 
-### 2. Identify Bounded Contexts
+### 3. Sketch Process Trees  
+For key workflows:  
+- Outline the "happy path" from start to finish.  
+- Mark decision nodes and their triggers.  
+- Chart exceptions—where it breaks, who fixes it.  
+- Highlight manual choke points.  
 
-Recognize that a large domain often contains multiple sub-domains with their own concepts and rules:
-
-- Map how domain concepts change meaning across different contexts
-- Document touchpoints where information flows between contexts
-- Define translation mechanisms needed at context boundaries
-- Determine which contexts must be consistent vs. which can operate independently
-
-This approach prevents building monolithic solutions that try to handle all aspects of a domain with a single model.
-
-### 3. Create Process/Decision Trees
-
-For each key workflow in the domain:
-
-- Document the standard "happy path" process
-- Identify decision points and their criteria
-- Map exception paths and how they're currently handled
-- Note where processes frequently break down or become manual
-
-These trees reveal the true complexity of the domain and highlight areas requiring special attention.
+These trees reveal the complexity and prioritize pain points.
 
 ## Functional Decomposition
 
-### 1. Identify Distinct Capabilities
+### 1. List Key Capabilities  
+Slice the DDP into functional chunks:  
+- Data gathering and cleanup.  
+- Analysis and decision aids.  
+- Workflow orchestration.  
+- Exception tracking.  
+- Reporting and auditing.  
 
-Break the DDP into discrete functional capabilities:
+Each chunk gets a clear job, making solutions modular.
 
-- Data collection and validation
-- Analysis and decision support
-- Execution and workflow management
-- Monitoring and exception handling
-- Reporting and compliance
+### 2. Set Human-Machine Roles  
+Divvy up the work:  
+- Automate: Rule-based tasks (e.g., flagging outliers).  
+- Support: Feed humans data for judgment calls.  
+- Augment: Boost experts with tools (e.g., scenario simulators).  
+- Oversee: Humans check complex automation.  
 
-This capability-based breakdown helps create modular solution components with clear responsibilities.
+This balance respects expertise while scaling efficiency.
 
-### 2. Map Human-Machine Boundaries
+### 3. Plan Iterative Releases  
+Stage your solution:  
+- Start with a thin, end-to-end slice (e.g., one workflow).  
+- Expand to new cases or contexts.  
+- Map dependencies (e.g., data before analysis).  
+- Build in feedback loops—surveys, metrics—to refine.  
 
-For each capability, determine the appropriate division of labor:
+**Quick-Start Checklist**:  
+  - ☑ Glossary locked in?  
+  - ☑ Decision flows charted?  
+  - ☑ Core domain isolated?  
+  - ☑ Capabilities assigned?  
+  - ☑ First release scoped?  
 
-- What decisions can be fully automated based on explicit rules?
-- Where does the system need to provide information for human judgment?
-- Which parts of the process require human expertise but could benefit from decision support?
-- What oversight mechanisms are needed when automation handles complex tasks?
+## Testing Assumptions and Validation
 
-This human-centered approach ensures your solution augments domain experts rather than attempting to replace them.
+### 1. Craft Domain Scenarios  
+Test your grasp with real-world cases:  
+- Detail typical flows (e.g., a standard order).  
+- Add edge cases that push limits.  
+- Vet with experts—tweak as they correct.  
+- Use these to stress-test solutions.  
 
-### 3. Define Iteration Pathways
+Scenarios double as benchmarks for success.
 
-Determine how to break the solution into sequential deliverables:
+### 2. Prototype Knowledge Gaps  
+Spot flaws early:  
+- Sketch domain models (e.g., flowcharts).  
+- Draft decision trees for tricky calls.  
+- Mock basic interfaces for workflows.  
+- Run these by experts—fix misunderstandings fast.  
 
-- Identify a minimal viable solution addressing a narrow but complete slice of the problem
-- Map expansion paths to cover additional use cases or domain areas
-- Determine dependencies between different components
-- Plan feedback-gathering mechanisms to validate each component
+These low-stakes tests save rework later.
 
-This iterative approach reduces risk by delivering incremental value while building toward the complete solution.
+### 3. Measure What Matters  
+Tie success to domain wins:  
+- Pick KPIs experts care about (e.g., error rates, speed).  
+- Baseline the current mess.  
+- Set error tolerances (e.g., 5% false positives max).  
+- Track tech *and* domain outcomes.  
 
-## Testing Assumptions and Validating Understanding
+This keeps your focus on value, not just uptime.
 
-### 1. Create Domain Scenarios
+## Case Study: Unpacking AML Compliance  
+Take anti-money laundering (AML) in banking:  
 
-Develop concrete scenarios that test your understanding:
+### Knowledge Mapping:  
+- Cataloged 200+ regs across regions.  
+- Traced how officers size up risky transactions.  
+- Bridged gaps between policy and practice.  
+- Built a glossary—e.g., "suspicious" varies by market.  
 
-- Write detailed descriptions of typical cases from the domain
-- Include edge cases that strain conventional approaches
-- Validate these scenarios with domain experts
-- Use them to test potential solution approaches
+### Structural Decomposition:  
+- **Core**: Risk scoring and investigation flow.  
+- **Supporting**: Customer checks, report filing.  
+- **Generic**: Login, logs.  
+- Split into contexts: onboarding, monitoring, cases.  
 
-These scenarios serve as validation tools and eventual test cases for your solution.
+### Functional Capabilities:  
+- Risk scoring and alerts.  
+- Investigation tools.  
+- Evidence logging.  
+- Report generation.  
+- Audit trails.  
 
-### 2. Build Knowledge Prototypes
+### Human-Machine Roles:  
+- Auto: Data pulls, first-pass scoring.  
+- Supported: Officers probe alerts with dashboards.  
+- Human: Final calls on tricky cases.  
 
-Create simplified prototypes to validate key domain concepts:
+### Iteration Plan:  
+1. Monitor one region and one product.  
+2. Add investigation and docs.  
+3. Automate reporting.  
+4. Scale to more regions.  
 
-- Develop visual models representing domain relationships
-- Create decision trees for complex judgment areas
-- Build simple interfaces to walk through workflows
-- Test these with domain experts before full development
+This turned a sprawling compliance beast into clear, staged wins.
 
-These knowledge prototypes reveal misunderstandings early when they're still easy to correct.
-
-### 3. Identify Measurable Outcomes
-
-Define how to measure success in domain-specific terms:
-
-- Identify key performance indicators that matter to domain experts
-- Establish baseline measurements of current performance
-- Define acceptable thresholds for different types of errors or exceptions
-- Create measurement mechanisms for both technical and domain outcomes
-
-These metrics ensure your solution delivers value measured by domain standards, not just technical benchmarks.
-
-## Case Study: Breaking Down a Financial Compliance DDP
-
-Consider how this approach might apply to breaking down anti-money laundering (AML) compliance in banking:
-
-### Knowledge Mapping:
-- Documented 200+ regulatory requirements across jurisdictions
-- Mapped how compliance officers evaluate transaction risk
-- Identified knowledge gaps between written policies and actual practice
-- Created a glossary of terms with jurisdiction-specific variations
-
-### Structural Decomposition:
-- **Core domain**: Transaction risk scoring and investigation workflow
-- **Supporting domains**: Customer due diligence, regulatory reporting
-- **Generic elements**: Data storage, user authentication, audit logging
-- Identified three bounded contexts: customer onboarding, transaction monitoring, and case management
-
-### Functional Capabilities:
-- Transaction monitoring and risk scoring
-- Alert management and investigation support
-- Case documentation and evidence collection
-- Regulatory report generation
-- Audit trail and compliance documentation
-
-### Human-Machine Boundaries:
-- Automated: Data collection, initial risk scoring, report generation
-- Human-led with system support: Alert investigation, final risk determination
-- Fully human: Complex case decisions, regulatory interpretation
-
-### Iteration Pathway:
-1. First iteration: Transaction monitoring for a single jurisdiction and product type
-2. Second iteration: Investigation workflow and documentation
-3. Third iteration: Regulatory reporting automation
-4. Fourth iteration: Expansion to additional jurisdictions and product types
-
-This systematic breakdown transformed an overwhelming compliance challenge into manageable components with clear priorities and boundaries.
-
-## Conclusion
-
-Breaking down Deep Domain Problems requires a methodical approach that respects the domain's inherent complexity while creating manageable components for implementation. By combining knowledge mapping, structural decomposition, and functional analysis, you can transform even the most complex domain challenges into solvable problems.
-
-The most successful decompositions maintain bidirectional translation between domain concepts and technical components throughout the process. This ensures your eventual solution speaks the language of the domain and addresses the true problem, not just its surface manifestations.
+## Conclusion  
+Breaking down a DDP isn’t guesswork—it’s a deliberate mix of mapping expertise, slicing structures, and testing assumptions. Done right, you’ll turn a tangled mess into components that solve the real problem, not just its shadow. Keep domain logic and tech in sync, and you’ll build something that sticks.  
