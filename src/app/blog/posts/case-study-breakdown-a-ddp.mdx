@@ -1,0 +1,117 @@
+---
+title: "Case Study: Decomposing a DDP in Supply Chain Optimization"
+publishedAt: "2025-02-22"
+summary: "A case study showcasing on how to break down a DDP in supply chain optimization using knowledge mapping, structural analysis, functional capabilities, and validation to build actionable solutions."
+---
+
+## Background
+
+This case study demonstrates decomposing a Deep Domain Problem (DDP) in supply chain optimization using a [systematic approach](/blog/how-to-break-down-a-deep-domain-problem) to create manageable solutions.
+
+A mid-sized logistics company faces a Deep Domain Problem (DDP): optimizing supply chain routes to reduce costs and delays amidst unpredictable disruptions (e.g., weather, supplier issues). The problem is complex, involving multiple stakeholders (drivers, warehouse managers, planners) and systems (GPS, inventory databases). Using the systematic approach, they decompose it into solvable parts.
+
+## Knowledge Extraction and Mapping
+
+### 1. Build a Domain Glossary
+
+- Defined terms like Route (path taken by a truck), Delay (time deviation from schedule), and Disruption (unexpected event)
+- Noted variations: planners see Route as a plan, drivers see it as real-time conditions
+- Result: A shared glossary aligned teams
+- Example: "A Disruption on a Route caused a Delay, flagged by the Tracking System"
+
+### 2. Chart Expert Decision-Making
+
+- Interviewed planners: They check Weather Data, Traffic Updates, and Inventory Levels before approving a Route
+- Decision tree:
+  ```
+  START: Route Planning
+  ├── Weather Clear?
+  │   ├── Yes
+  │   │   ├── Traffic Normal?
+  │   │   │   ├── Yes → APPROVE ROUTE
+  │   │   │   └── No → REROUTE
+  │   │   └── No → DELAY OR REROUTE
+  │   └── No → ASSESS ALTERNATE MODES
+  └── END
+  ```
+- Uncovered pattern: Planners rely heavily on gut calls when data conflicts
+
+### 3. Pinpoint Knowledge Sources
+
+- Formal: DOT regulations, company SOPs
+- Informal: Driver tips on backroads
+- Systems: GPS APIs, warehouse databases
+- Prioritized: GPS data and SOPs for reliability
+
+## Structural Decomposition
+
+### 1. Split Core from Support
+
+- Core Domain: Dynamic route optimization (unique value)
+- Supporting Domains: Inventory tracking, driver scheduling
+- Generic Elements: User login portal
+- Focused innovation on route optimization
+
+### 2. Define Bounded Contexts
+
+- Contexts: Planning (route creation), Execution (driver actions)
+- Shift: Route in Planning is a plan; in Execution, it's real-time
+- Translation: Planning sends Route data to Execution via API
+- Kept contexts modular
+
+### 3. Sketch Process Trees
+
+- Happy path: Plan → Assign → Deliver
+- Decision node: Traffic jam → Reroute or wait?
+- Exception: Truck breakdown → Dispatch backup
+- Choke point: Manual rerouting delays
+
+## Functional Decomposition
+
+### 1. List Key Capabilities
+
+- Data gathering: Collect GPS, weather, traffic data
+- Analysis: Suggest optimal routes
+- Workflow: Assign drivers and notify stakeholders
+- Exceptions: Track and resolve disruptions
+- Reporting: Log delays and costs
+
+### 2. Set Human-Machine Roles
+
+- Automate: Traffic alerts
+- Support: Feed planners real-time data
+- Augment: Simulate route options
+- Oversee: Planners approve final routes
+
+### 3. Plan Iterative Releases
+
+- Slice 1: Optimize one warehouse's routes
+- Slice 2: Add multi-warehouse sync
+- Feedback: Driver surveys on route usability
+
+## Testing Assumptions and Validation
+
+### 1. Craft Domain Scenarios
+
+- Typical: Clear day, standard delivery
+- Edge: Blizzard disrupts 50% of routes
+- Validated with planners and drivers
+
+### 2. Prototype Knowledge Gaps
+
+- Sketched a flowchart for rerouting
+- Mocked a route suggestion interface
+- Fixed gap: Planners needed supplier delay data
+
+### 3. Measure What Matters
+
+- KPIs: Delivery time, fuel cost
+- Baseline: 10% delayed routes
+- Tolerance: Reduce delays to 5%
+- Tracked: Route efficiency improved by 12%
+
+## Outcome
+
+The company launched a route optimization tool that cut delays by 7% and fuel costs by 10% in six months. The decomposition approach ensured focus on the core problem, modular design, and expert buy-in, turning a sprawling DDP into a practical solution.
+
+This case study demonstrates how each checklist step applies in a real-world context, delivering measurable value while managing complexity.

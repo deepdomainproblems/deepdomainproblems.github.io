@@ -8,26 +8,30 @@ Identifying a Deep Domain Problem (DDP) worth solving is just the start. The rea
 
 ## Knowledge Extraction and Mapping
 
-### 1. Build a Domain Glossary  
-Anchor your work with a shared vocabulary:  
-- Capture how experts define key terms (e.g., "risk" in finance vs. manufacturing).  
-- Note stakeholder-specific variations—same word, different meanings.  
-- Flag subtle distinctions (e.g., "policy" vs. "guideline").  
-- Track context-shifting definitions.  
+### 1. Build a Domain Glossary
+
+Anchor your work with a shared vocabulary:
+
+- Capture how experts define key terms (e.g., "risk" in finance vs. manufacturing).
+- Note stakeholder-specific variations—same word, different meanings.
+- Flag subtle distinctions (e.g., "policy" vs. "guideline").
+- Track context-shifting definitions.
 
 This glossary aligns your team and grounds all analysis. Here is an example showcasing that words in bold are glossary words.
 
 Example: Jane, an **Influencer**, posted a viral **Tweet** about a new **Hashtag** trending on X. Her **Followers** quickly engaged, boosting the **Post Engagement** with likes and retweets. The **X Algorithm** pushed the content to more users, increasing Jane’s **Follower Count**. She celebrated by sharing a **Pinned Post** to thank her community.
 
+### 2. Chart Expert Decision-Making
 
-### 2. Chart Expert Decision-Making  
-Unpack how pros navigate the domain:  
-- Interview varied experts on key workflows and record steps and gut calls.  
-- Pinpoint inputs they weigh (e.g., data, past cases).  
-- Highlight forks like "it depends"—these signal critical logic splits.  
-- Compare approaches across experts to spot patterns or gaps.  
+Unpack how pros navigate the domain:
+
+- Interview varied experts on key workflows and record steps and gut calls.
+- Pinpoint inputs they weigh (e.g., data, past cases).
+- Highlight forks like "it depends"—these signal critical logic splits.
+- Compare approaches across experts to spot patterns or gaps.
 
 These maps expose the tacit smarts driving the domain. Below is an example.
+
 ```
 START: Loan Application
 ├── Credit Score ≥ 600?
@@ -49,201 +53,124 @@ START: Loan Application
 └── END
 ```
 
-### 3. Pinpoint Knowledge Sources  
-Locate where truth lives:  
-- Formal: Regs, manuals, SOPs.  
-- Informal: Expert know-how, unwritten rules.  
-- Systems: Databases, legacy tools, external APIs.  
-- Tribal: Shop-floor wisdom or team lore.  
+### 3. Pinpoint Knowledge Sources
+
+Locate where truth lives:
+
+- Formal: Regs, manuals, SOPs.
+- Informal: Expert know-how, unwritten rules.
+- Systems: Databases, legacy tools, external APIs.
+- Tribal: Shop-floor wisdom or team lore.
 
 Prioritize what to formalize first—start with what’s reliable and accessible.
 
 ## Structural Decomposition
 
-### 1. Split Core from Support  
-Layer the problem by value:  
-- Core Domain: What’s unique and high-stakes (e.g., risk scoring in compliance).  
-- Supporting Domains: Essential but commodity (e.g., data entry).  
-- Generic Elements: Off-the-shelf stuff (e.g., login systems).  
+### 1. Split Core from Support
+
+Layer the problem by value:
+
+- Core Domain: What’s unique and high-stakes (e.g., risk scoring in compliance).
+- Supporting Domains: Essential but commodity (e.g., data entry).
+- Generic Elements: Off-the-shelf stuff (e.g., login systems).
 
 Focus innovation on the core; leverage existing tools elsewhere.
 
-### 2. Define Bounded Contexts  
-Big domains fragment into sub-worlds:  
-- Map where concepts shift (e.g., "order" in sales vs. shipping).  
-- Trace data handoffs between contexts.  
-- Specify translation rules at boundaries.  
-- Flag which contexts sync vs. run solo.  
+### 2. Define Bounded Contexts
+
+Big domains fragment into sub-worlds:
+
+- Map where concepts shift (e.g., "order" in sales vs. shipping).
+- Trace data handoffs between contexts.
+- Specify translation rules at boundaries.
+- Flag which contexts sync vs. run solo.
 
 This keeps your solution modular, not a bloated monolith.
 
-### 3. Sketch Process Trees  
-For key workflows:  
-- Outline the "happy path" from start to finish.  
-- Mark decision nodes and their triggers.  
-- Chart exceptions—where it breaks and who fixes it.  
-- Highlight manual choke points.  
+### 3. Sketch Process Trees
+
+For key workflows:
+
+- Outline the "happy path" from start to finish.
+- Mark decision nodes and their triggers.
+- Chart exceptions—where it breaks and who fixes it.
+- Highlight manual choke points.
 
 These trees reveal the complexity and prioritize pain points.
 
 ## Functional Decomposition
 
-### 1. List Key Capabilities  
-Slice the DDP into functional chunks:  
-- Data gathering and cleanup.  
-- Analysis and decision aids.  
-- Workflow orchestration.  
-- Exception tracking.  
-- Reporting and auditing.  
+### 1. List Key Capabilities
+
+Slice the DDP into functional chunks:
+
+- Data gathering and cleanup.
+- Analysis and decision aids.
+- Workflow orchestration.
+- Exception tracking.
+- Reporting and auditing.
 
 Each chunk gets a clear job, making solutions modular.
 
-### 2. Set Human-Machine Roles  
-Divvy up the work:  
-- Automate: Rule-based tasks (e.g., flagging outliers).  
-- Support: Feed humans data for judgment calls.  
-- Augment: Boost experts with tools (e.g., scenario simulators).  
-- Oversee: Humans check complex automation.  
+### 2. Set Human-Machine Roles
+
+Divvy up the work:
+
+- Automate: Rule-based tasks (e.g., flagging outliers).
+- Support: Feed humans data for judgment calls.
+- Augment: Boost experts with tools (e.g., scenario simulators).
+- Oversee: Humans check complex automation.
 
 This balance respects expertise while scaling efficiency.
 
-### 3. Plan Iterative Releases  
-Stage your solution:  
-- Start with a thin, end-to-end slice (e.g., one workflow).  
-- Expand to new cases or contexts.  
-- Map dependencies (e.g., data before analysis).  
-- Build in feedback loops—surveys, metrics—to refine.  
+### 3. Plan Iterative Releases
+
+Stage your solution:
+
+- Start with a thin, end-to-end slice (e.g., one workflow).
+- Expand to new cases or contexts.
+- Map dependencies (e.g., data before analysis).
+- Build in feedback loops—surveys, metrics—to refine.
 
 ## Testing Assumptions and Validation
 
-### 1. Craft Domain Scenarios  
-Test your grasp with real-world cases:  
-- Detail typical flows (e.g., a standard order).  
-- Add edge cases that push limits.  
-- Vet with experts—tweak as they correct.  
-- Use these to stress-test solutions.  
+### 1. Craft Domain Scenarios
+
+Test your grasp with real-world cases:
+
+- Detail typical flows (e.g., a standard order).
+- Add edge cases that push limits.
+- Vet with experts—tweak as they correct.
+- Use these to stress-test solutions.
 
 Scenarios double as benchmarks for success.
 
-### 2. Prototype Knowledge Gaps  
-Spot flaws early:  
-- Sketch domain models (e.g., flowcharts).  
-- Draft decision trees for tricky calls.  
-- Mock basic interfaces for workflows.  
-- Run these by experts—fix misunderstandings fast.  
+### 2. Prototype Knowledge Gaps
+
+Spot flaws early:
+
+- Sketch domain models (e.g., flowcharts).
+- Draft decision trees for tricky calls.
+- Mock basic interfaces for workflows.
+- Run these by experts—fix misunderstandings fast.
 
 These low-stakes tests save rework later.
 
-### 3. Measure What Matters  
-Tie success to domain wins:  
-- Pick KPIs experts care about (e.g., error rates, speed).  
-- Baseline the current mess.  
-- Set error tolerances (e.g., 5% false positives max).  
-- Track tech and domain outcomes.  
+### 3. Measure What Matters
+
+Tie success to domain wins:
+
+- Pick KPIs experts care about (e.g., error rates, speed).
+- Baseline the current mess.
+- Set error tolerances (e.g., 5% false positives max).
+- Track tech and domain outcomes.
 
 This keeps your focus on value, not just uptime.
 
 ## Case Study: Decomposing a DDP in Supply Chain Optimization
 
-### Background
+This [case study](/blog/case-study-breakdown-a-ddp) demonstrates how each checklist step applies in a real-world context, delivering measurable value while managing complexity.
 
-A mid-sized logistics company faces a Deep Domain Problem (DDP): optimizing supply chain routes to reduce costs and delays amidst unpredictable disruptions (e.g., weather, supplier issues). The problem is complex, involving multiple stakeholders (drivers, warehouse managers, planners) and systems (GPS, inventory databases). Using the systematic approach, they decompose it into solvable parts.
+## Conclusion
 
-### Step-by-Step Application
-
-#### Knowledge Extraction and Mapping
-
-##### Build a Domain Glossary
-- Defined terms like Route (path taken by a truck), Delay (time deviation from schedule), and Disruption (unexpected event)
-- Noted variations: planners see Route as a plan, drivers see it as real-time conditions
-- Result: A shared glossary aligned teams
-- Example: "A Disruption on a Route caused a Delay, flagged by the Tracking System"
-
-##### Chart Expert Decision-Making
-- Interviewed planners: They check Weather Data, Traffic Updates, and Inventory Levels before approving a Route
-- Decision tree:
-  ```
-  START: Route Planning
-  ├── Weather Clear?
-  │   ├── Yes
-  │   │   ├── Traffic Normal?
-  │   │   │   ├── Yes → APPROVE ROUTE
-  │   │   │   └── No → REROUTE
-  │   │   └── No → DELAY OR REROUTE
-  │   └── No → ASSESS ALTERNATE MODES
-  └── END
-  ```
-- Uncovered pattern: Planners rely heavily on gut calls when data conflicts
-
-##### Pinpoint Knowledge Sources
-- Formal: DOT regulations, company SOPs
-- Informal: Driver tips on backroads
-- Systems: GPS APIs, warehouse databases
-- Prioritized: GPS data and SOPs for reliability
-
-#### Structural Decomposition
-
-##### Split Core from Support
-- Core Domain: Dynamic route optimization (unique value)
-- Supporting Domains: Inventory tracking, driver scheduling
-- Generic Elements: User login portal
-- Focused innovation on route optimization
-
-##### Define Bounded Contexts
-- Contexts: Planning (route creation), Execution (driver actions)
-- Shift: Route in Planning is a plan; in Execution, it's real-time
-- Translation: Planning sends Route data to Execution via API
-- Kept contexts modular
-
-##### Sketch Process Trees
-- Happy path: Plan → Assign → Deliver
-- Decision node: Traffic jam → Reroute or wait?
-- Exception: Truck breakdown → Dispatch backup
-- Choke point: Manual rerouting delays
-
-#### Functional Decomposition
-
-##### List Key Capabilities
-- Data gathering: Collect GPS, weather, traffic data
-- Analysis: Suggest optimal routes
-- Workflow: Assign drivers and notify stakeholders
-- Exceptions: Track and resolve disruptions
-- Reporting: Log delays and costs
-
-##### Set Human-Machine Roles
-- Automate: Traffic alerts
-- Support: Feed planners real-time data
-- Augment: Simulate route options
-- Oversee: Planners approve final routes
-
-##### Plan Iterative Releases
-- Slice 1: Optimize one warehouse's routes
-- Slice 2: Add multi-warehouse sync
-- Feedback: Driver surveys on route usability
-
-#### Testing Assumptions and Validation
-
-##### Craft Domain Scenarios
-- Typical: Clear day, standard delivery
-- Edge: Blizzard disrupts 50% of routes
-- Validated with planners and drivers
-
-##### Prototype Knowledge Gaps
-- Sketched a flowchart for rerouting
-- Mocked a route suggestion interface
-- Fixed gap: Planners needed supplier delay data
-
-##### Measure What Matters
-- KPIs: Delivery time, fuel cost
-- Baseline: 10% delayed routes
-- Tolerance: Reduce delays to 5%
-- Tracked: Route efficiency improved by 12%
-
-### Outcome
-
-The company launched a route optimization tool that cut delays by 7% and fuel costs by 10% in six months. The decomposition approach ensured focus on the core problem, modular design, and expert buy-in, turning a sprawling DDP into a practical solution.
-
-This case study demonstrates how each checklist step applies in a real-world context, delivering measurable value while managing complexity.
-
-## Conclusion  
-Breaking down a DDP isn’t guesswork—it’s a deliberate mix of mapping expertise, slicing structures, and testing assumptions. Done right, you’ll turn a tangled mess into components that solve the real problem, not just its shadow. Keep domain logic and tech in sync, and you’ll build something that sticks.  
+Breaking down a DDP isn’t guesswork—it’s a deliberate mix of mapping expertise, slicing structures, and testing assumptions. Done right, you’ll turn a tangled mess into components that solve the real problem, not just its shadow. Keep domain logic and tech in sync, and you’ll build something that sticks.
