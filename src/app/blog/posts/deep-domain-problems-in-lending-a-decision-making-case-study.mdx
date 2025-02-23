@@ -1,0 +1,137 @@
+---
+title: "Deep Domain Problems in Lending: A Decision-Making Case Study"
+publishedAt: "2025-02-23"
+summary: "An in-depth analysis of how lending professionals navigate complex decision-making processes, demonstrating the practical application of Deep Domain Problem solving in financial services."
+---
+
+## Introduction
+
+The lending industry presents a classic example of a Deep Domain Problem (DDP), where expert knowledge, regulatory requirements, and complex decision-making intersect. As outlined in [How to Identify Deep Domain Problems Worth Solving](/blog/how-to-identify-deep-domain-problems-worth-solving), let's unpack how professionals navigate this domain by interviewing experts, recording workflows and gut calls, pinpointing inputs, identifying critical forks, and comparing approaches.
+
+## Step 1: Interview Experts and Record Workflows
+
+### Expert 1 (Underwriter): Focuses on risk mitigation
+
+- Steps: Check credit score, review financial statements, assess debt-to-income (DTI) ratio, verify collateral
+- Gut call: "If the business seems unstable despite good numbers, I dig deeper into cash flow"
+
+### Expert 2 (Loan Officer): Prioritizes client relationship and feasibility
+
+- Steps: Evaluate business plan, discuss repayment capacity with applicant, check industry trends
+- Gut call: "A passionate owner with a solid plan can outweigh a shaky credit history"
+
+### Expert 3 (Analyst): Relies on data models
+
+- Steps: Run credit risk algorithm, compare application to historical defaults, assess market conditions
+- Gut call: "Numbers don't lie, but outliers need context—like a sudden market dip"
+
+## Step 2: Pinpoint Inputs
+
+As described in [How to Break Down a Deep Domain Problem](/blog/how-to-break-down-a-deep-domain-problem), we categorize key inputs:
+
+### Data Inputs
+
+- Credit score
+- DTI ratio
+- Revenue
+- Cash flow
+- Collateral value
+
+### Qualitative Inputs
+
+- Business plan quality
+- Owner credibility
+- Industry outlook
+
+### External Inputs
+
+- Market conditions
+- Historical loan performance
+
+## Step 3: Highlight Forks ("It Depends")
+
+- Credit score < 600: Immediate rejection vs. consider compensating factors?
+- High DTI but strong cash flow: Approve with conditions vs. reject?
+- Weak collateral but growing industry: Risk it vs. demand more security?
+
+## Step 4: Compare Approaches
+
+### Pattern
+
+All experts check credit and financials, but weight varies:
+
+- Underwriter: 70% data
+- Loan Officer: 50% story
+- Analyst: 90% model
+
+### Gap
+
+- Underwriter skips industry trends
+- Loan Officer undervalues collateral
+- Analyst misses owner intent
+
+## Step 5: Decision-Making Tree
+
+Following the principles from [Ubiquitous Language: The Foundation for Solving Deep Domain Problems](/blog/ubiquitous-language-the-foundation-for-solving-deep-domain-problems), here's a comprehensive decision tree:
+
+```
+START: Small Business Loan Application Received
+├── Input 1: Credit Score
+│   ├── ≥ 600
+│   │   ├── Input 2: Debt-to-Income (DTI) Ratio
+│   │   │   ├── ≤ 40%
+│   │   │   │   ├── Input 3: Cash Flow (Positive last 12 months?)
+│   │   │   │   │   ├── Yes
+│   │   │   │   │   │   ├── Input 4: Collateral Value ≥ 50% of Loan?
+│   │   │   │   │   │   │   ├── Yes → APPROVE LOAN
+│   │   │   │   │   │   │   └── No
+│   │   │   │   │   │   │       ├── Input 5: Industry Growth?
+│   │   │   │   │   │   │       │   ├── Yes → APPROVE WITH HIGHER RATE
+│   │   │   │   │   │   │       │   └── No → REJECT (Weak security)
+│   │   │   │   │   └── No
+│   │   │   │   │       ├── Input 6: Business Plan Quality
+│   │   │   │   │       │   ├── Strong → APPROVE WITH MONITORING
+│   │   │   │   │       │   └── Weak → REJECT (Unstable cash flow)
+│   │   │   └── > 40%
+│   │   │       ├── Input 7: Cash Flow Trend (Improving?)
+│   │   │       │   ├── Yes
+│   │   │       │   │   ├── Input 8: Owner Credibility
+│   │   │       │   │   │   ├── High → APPROVE WITH CONDITIONS
+│   │   │       │   │   │   └── Low → REJECT (Risky profile)
+│   │   │       │   └── No → REJECT (High DTI, no recovery)
+│   │   └── Input 9: Compensating Factors (e.g., Co-signer, Large Deposit)?
+│   │       ├── Yes
+│   │       │   ├── Return to Input 2 (Reassess DTI with adjustments)
+│   │       │   └── If still weak → REJECT
+│   │       └── No → REJECT (Credit too low)
+│   └── < 600
+│       ├── Input 10: Exceptional Circumstances (e.g., Recent bankruptcy recovery)?
+│       │   ├── Yes
+│       │   │   ├── Input 11: Strong Business Plan + Industry Boom?
+│       │   │   │   ├── Yes → APPROVE WITH STRICT TERMS
+│       │   │   │   └── No → REJECT
+│       │   └── No → REJECT (Credit disqualifies)
+└── END
+```
+
+## Explanation of the Tree
+
+### Sequential Logic
+
+Starts with a hard filter (credit score), reflecting the underwriter's risk focus, but allows exceptions (loan officer's influence).
+
+### Critical Forks
+
+"It depends" moments like high DTI with improving cash flow or weak collateral in a hot industry capture expert trade-offs.
+
+### Tacit Smarts
+
+Gut calls surface—e.g., "owner credibility" (Loan Officer) tempers data-driven rejection (Analyst), while "industry growth" (Analyst) offsets weak collateral (Underwriter).
+
+### Patterns and Gaps
+
+The tree balances data (credit, DTI) with narrative (business plan, owner), bridging the experts' approaches while exposing gaps (e.g., no one prioritizes market downturns explicitly).
+
+## Conclusion
+
+This decision tree is a practical map of how lending pros navigate approvals, blending hard rules with contextual judgment—exemplifying the principles discussed in [The Evolving Role of Programmers in Solving Deep Domain Problems](/blog/the-evolving-role-of-programmers-in-solving-deep-domain-problems). For more insights on breaking down similar complex domain challenges, see our [Case Study: Decomposing a DDP in Supply Chain Optimization](/blog/case-study-breakdown-a-ddp).
