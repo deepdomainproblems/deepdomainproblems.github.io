@@ -28,6 +28,7 @@ export const bookStructure: Part[] = [
       "the-evolution-of-programming-from-code-to-deep-domain-problems",
       "the-evolving-role-of-programmers-in-solving-deep-domain-problems",
       "ubiquitous-language-the-foundation-for-solving-deep-domain-problems",
+      "software-packaging-the-game-changer-for-deep-domain-problem-solutions",
       "how-to-take-ddps-solutions-to-market",
     ],
   },
