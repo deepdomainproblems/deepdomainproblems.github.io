@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { formatDate, getBlogPosts } from "@/app/chapter/utils";
+import { getBlogPosts } from "@/app/chapter/utils";
 import { bookStructure } from "@/components/toc";
 
 export function BlogPosts() {
