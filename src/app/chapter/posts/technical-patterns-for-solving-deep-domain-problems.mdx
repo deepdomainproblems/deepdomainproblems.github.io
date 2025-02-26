@@ -4,7 +4,7 @@ publishedAt: "2025-02-23"
 summary: "A technical guide to implementing DDP solutions, with real-world examples from lending, forex risk management, and supply chain domains."
 ---
 
-Once you've completed [breaking down a Deep Domain Problem](/blog/how-to-break-down-a-deep-domain-problem), implementation requires careful technical consideration. This guide draws from successful implementations at [Betalectic](https://betalectic.com), including our [supply chain optimization case study](/blog/case-study-breakdown-a-ddp) and [lending decision-making analysis](/blog/deep-domain-problems-in-lending-a-decision-making-case-study).
+Once you've completed [breaking down a Deep Domain Problem](/chapter/how-to-break-down-a-deep-domain-problem), implementation requires careful technical consideration. This guide draws from successful implementations at [Betalectic](https://betalectic.com), including our [supply chain optimization case study](/chapter/case-study-breakdown-a-ddp) and [lending decision-making analysis](/chapter/deep-domain-problems-in-lending-a-decision-making-case-study).
 
 ## 1. Domain-Driven Architecture Patterns
 
@@ -108,7 +108,7 @@ class ForexRiskAnalyzer {
 
 ### Event Sourcing Pattern
 
-From our [supply chain optimization case study](/blog/case-study-breakdown-a-ddp):
+From our [supply chain optimization case study](/chapter/case-study-breakdown-a-ddp):
 
 ```typescript
 interface DomainEvent {
@@ -141,7 +141,7 @@ class RouteAggregate {
 
 ### Saga Pattern for Long-Running Processes
 
-Based on the loan approval workflow from our [lending case study](/blog/deep-domain-problems-in-lending-a-decision-making-case-study):
+Based on the loan approval workflow from our [lending case study](/chapter/deep-domain-problems-in-lending-a-decision-making-case-study):
 
 ```typescript
 class LoanApprovalSaga {
@@ -175,7 +175,7 @@ class LoanApprovalSaga {
 
 ### Rule Engine Pattern
 
-Implementing the decision tree from our [lending case study](/blog/deep-domain-problems-in-lending-a-decision-making-case-study):
+Implementing the decision tree from our [lending case study](/chapter/deep-domain-problems-in-lending-a-decision-making-case-study):
 
 ```typescript
 interface Rule {
@@ -200,7 +200,7 @@ class DebtToIncomeRule implements Rule {
 
 ## 4. AI Integration Patterns
 
-As discussed in [Coding with AI and Sunk Cost Fallacy](/blog/coding-with-ai-and-sunk-cost-fallacy) and [The Evolving Role of Programmers](/blog/the-evolving-role-of-programmers-in-solving-deep-domain-problems):
+As discussed in [Coding with AI and Sunk Cost Fallacy](/chapter/coding-with-ai-and-sunk-cost-fallacy) and [The Evolving Role of Programmers](/chapter/the-evolving-role-of-programmers-in-solving-deep-domain-problems):
 
 ```typescript
 class AIAssistantIntegration {
@@ -218,7 +218,7 @@ class AIAssistantIntegration {
 
 ## 5. Performance Optimization
 
-Drawing from our [supply chain optimization case study](/blog/case-study-breakdown-a-ddp):
+Drawing from our [supply chain optimization case study](/chapter/case-study-breakdown-a-ddp):
 
 ```typescript
 class PerformanceOptimizer {
@@ -244,12 +244,12 @@ class PerformanceOptimizer {
 
 For more context and examples, see our implementations at [Betalectic](https://betalectic.com), [WiredUp](https://www.wiredup.in), [Finezzy](https://finezzy.com), and [Evoilve](https://evoilve.com), along with these detailed guides:
 
-- [How to Break Down a Deep Domain Problem](/blog/how-to-break-down-a-deep-domain-problem)
-- [The Evolving Role of Programmers in Solving Deep Domain Problems](/blog/the-evolving-role-of-programmers-in-solving-deep-domain-problems)
-- [Ubiquitous Language: The Foundation for Solving Deep Domain Problems](/blog/ubiquitous-language-the-foundation-for-solving-deep-domain-problems)
-- [Deep Domain Problems in Lending: A Decision-Making Case Study](/blog/deep-domain-problems-in-lending-a-decision-making-case-study)
-- [Case Study: Decomposing a DDP in Supply Chain Optimization](/blog/case-study-breakdown-a-ddp)
+- [How to Break Down a Deep Domain Problem](/chapter/how-to-break-down-a-deep-domain-problem)
+- [The Evolving Role of Programmers in Solving Deep Domain Problems](/chapter/the-evolving-role-of-programmers-in-solving-deep-domain-problems)
+- [Ubiquitous Language: The Foundation for Solving Deep Domain Problems](/chapter/ubiquitous-language-the-foundation-for-solving-deep-domain-problems)
+- [Deep Domain Problems in Lending: A Decision-Making Case Study](/chapter/deep-domain-problems-in-lending-a-decision-making-case-study)
+- [Case Study: Decomposing a DDP in Supply Chain Optimization](/chapter/case-study-breakdown-a-ddp)
 
 ## Conclusion
 
-The key to successful DDP implementation lies in combining robust technical patterns with deep domain understanding. As shown through our examples from [Betalectic](https://betalectic.com), [WiredUp](https://www.wiredup.in), and [Finezzy](https://finezzy.com), effective solutions require both technical excellence and domain expertise. For more insights on developing shared understanding between technical and domain teams, see our guide on [Ubiquitous Language](/blog/ubiquitous-language-the-foundation-for-solving-deep-domain-problems).
+The key to successful DDP implementation lies in combining robust technical patterns with deep domain understanding. As shown through our examples from [Betalectic](https://betalectic.com), [WiredUp](https://www.wiredup.in), and [Finezzy](https://finezzy.com), effective solutions require both technical excellence and domain expertise. For more insights on developing shared understanding between technical and domain teams, see our guide on [Ubiquitous Language](/chapter/ubiquitous-language-the-foundation-for-solving-deep-domain-problems).

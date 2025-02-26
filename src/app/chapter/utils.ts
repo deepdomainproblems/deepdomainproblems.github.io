@@ -75,7 +75,7 @@ export function getBlogPosts(): {
   slug: string;
   content: string;
 }[] {
-  return getMDXData(path.join(process.cwd(), "src", "app", "blog", "posts"));
+  return getMDXData(path.join(process.cwd(), "src", "app", "chapter", "posts"));
 }
 
 export function formatDate(date: string, includeRelative = false): string {
