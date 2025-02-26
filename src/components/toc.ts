@@ -8,9 +8,9 @@ export const bookStructure: Part[] = [
   {
     title: "Part I: Understanding Deep Domain Problems",
     posts: [
-      "deep-domain-problems-in-lending-a-decision-making-case-study",
       "how-to-identify-deep-domain-problems-worth-solving",
       "how-to-break-down-a-deep-domain-problem",
+      "deep-domain-problems-in-lending-a-decision-making-case-study",
     ],
   },
   {
