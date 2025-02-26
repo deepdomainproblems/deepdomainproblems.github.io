@@ -8,7 +8,7 @@ export function BlogPosts() {
   allBlogs.forEach((post) => (blogPostsBySlug[post.slug] = post));
 
   return (
-    <div className="flex flex-col space-y-4">
+    <div className="flex flex-col space-y-6">
       {bookStructure.map((part) => (
         <div key={part.title} className="flex flex-col space-y-2">
           <h2 className="font-semibold text-xl tracking-tight">{part.title}</h2>
@@ -19,7 +19,7 @@ export function BlogPosts() {
               return (
                 <Link
                   key={slug}
-                  className="flex flex-col space-y-1 ml-4"
+                  className="flex flex-col space-y-1"
                   href={`/blog/${slug}`}
                 >
                   <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
