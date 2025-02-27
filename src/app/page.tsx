@@ -9,9 +9,9 @@ export default function Page() {
       <p className="mb-4">
         {`Deep Domain Problems drive critical industry systems, requiring specialized expertise and technical abilities to solve. These challenges require navigating industry-specific complexities, regulatory constraints, and institutional knowledge. I support strategic partnerships between domain experts and technologists, as innovation emerges when field experience combines with technical capabilities.`}
       </p>
-      {/* <div className="my-8">
+      <div className="my-8">
         <BlogPosts />
-      </div> */}
+      </div>
     </section>
   );
 }
