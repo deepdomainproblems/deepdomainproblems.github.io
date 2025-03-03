@@ -20,6 +20,7 @@ export const bookStructure: Part[] = [
       "discovery-coding-in-ddp",
       "coding-with-ai-and-sunk-cost-fallacy",
       "ubiquitous-language-the-foundation-for-solving-deep-domain-problems",
+      "data-modeling-and-why-ddps-shouldnt-be-built-like-any-other-software",
     ],
   },
   {
