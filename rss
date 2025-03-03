@@ -5,6 +5,12 @@
         <link>https://deepdomainproblems.com</link>
         <description>This is my portfolio RSS feed</description>
         <item>
+          <title>Data Modeling and why DDPs shouldn't be built like any other software</title>
+          <link>https://deepdomainproblems.com/chapter/data-modeling-and-why-ddps-shouldnt-be-built-like-any-other-software</link>
+          <description>A comprehensive exploration of how data modeling for Deep Domain Problems requires a specialized approach that prioritizes domain expertise, tacit knowledge capture, and flexible architectures to effectively solve complex industry challenges.</description>
+          <pubDate>Mon, 03 Mar 2025 00:00:00 GMT</pubDate>
+        </item>
+<item>
           <title>Introduction</title>
           <link>https://deepdomainproblems.com/chapter/introduction-to-deep-domain-problems</link>
           <description>An introduction to the concept of Deep Domain Problems and why they matter in today's technological landscape.</description>
