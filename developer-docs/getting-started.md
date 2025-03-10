@@ -128,17 +128,13 @@ deepdomainproblems.github.io/
 
 ### URL Structure
 
-The project appears to use a chapter-based URL structure, with links following the pattern `/chapter/article-slug`. This is important to understand when creating internal links between documents.
+The project uses a chapter-based URL structure, with links following the pattern `/chapter/article-slug`. Understanding this is important when creating internal links between documents.
 
 ## Development Workflow
 
 ### Framework Details
 
-This project is likely built using one of the following JavaScript frameworks:
-
-- **Next.js**: A React framework with support for server-side rendering and static site generation
-- **Gatsby**: A static site generator optimized for React and GraphQL
-- **Astro**: A new framework for building faster content-focused websites
+This project is built using Next.js.
 
 The specific framework will determine some aspects of development, such as file structure and routing patterns.
 
@@ -199,7 +195,7 @@ To create a production build:
 pnpm build
 ```
 
-The output will be generated in the `dist` or `out` directory, depending on the framework used.
+Depending on the framework used, the output will be generated in the `dist` or `out` directory.
 
 ### Testing
 
@@ -227,8 +223,8 @@ git checkout -b content/article-name       # For content additions or updates
 3. Commit your changes with meaningful commit messages using conventional commits:
 
 ```
-feat: add new article on domain modeling
-fix: correct broken link in introduction
+feat: add a new article on domain modeling
+fix: correct the broken link in the introduction
 docs: update setup instructions
 ```
 
